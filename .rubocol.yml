@@ -1,0 +1,20 @@
+inherit_from: ../.rubocop.yml
+
+require: rubocop-rails
+
+AllCops:
+  Exclude:
+    - db/migrate/**/*
+    - db/schema.rb
+    - script/**/*
+    - bin/**/*
+    - bin/*
+    - Rakefile
+    - config.ru
+
+require:
+  - rubocop-rails
+
+Style/Documentation:
+  Enabled: false
+    
